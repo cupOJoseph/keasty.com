@@ -71,12 +71,14 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm-6" align="center">
                 <a-scene>
                     <a-assets>
                         <a-asset-item id="tinyhome1" src="tinyhome1.dae"></a-asset-item>
                     </a-assets>
                     <a-entity collada-model="#tinyhome1"></a-entity>
+                    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+                    <a-sky color="#ECECEC"></a-sky>
                 </a-scene>
             </div>
         </div>
