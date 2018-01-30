@@ -1,96 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+ <head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="assets/style.css">
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <title>Keasty</title>
+   <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type="text/javascript" src="scripts/addFrames.js"></script>
 
-  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+   <title>Model Grid</title>
+ </head>
+ <body>
+   <h1>
+         third floor planning
+       </h1>
+       <br>
+       <div class="fukol"> <!-- 6 -->
+     <ul class="fukol-grid" id="frames">
+         <div class="content-box" >
+           <a-scene embedded>
+             <a-assets>
+             <a-asset-item id="7ecn35n3" src="models/7ecn35n3.dae"></a-asset-item>
+              </a-assets>
+                       <a-entity collada-model="#7ecn35n3"></a-entity>
+                       <a-sky color="#c4e6ff"></a-sky>
+           </a-scene>
+         </div>
 
-  </head>
-  <body>
+         <div class="content-box1">
 
-      <!--Navigation header-->
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">Keasty</a>
-    </nav>
-    <br>
-    <!-- gorilla content -->
-    <div class="container-fluid">
-      
-        <div class="row">
-          
-            <div class="col-sm-4">
-              
-                <div class="card">
-                  
-                    <img src="assets/gorilla.jpg" class="card-img-top" alt="Responsive image">
-                    <div class="card-body">
-                        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@kellysikkema?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Kelly Sikkema"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title>
-                        </svg></span><span style="display:inline-block;padding:2px 3px;">Kelly Sikkema</span></a>
-                    </div>
-                  
-                </div>
-              
-            </div>
-          
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="assets/gorilla2.jpg" class="card-img-top" alt="Responsive image">
-                    <div class="card-body">
-                        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@robschreckhise?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Rob Schreckhise"><span style="display:inline-block;padding:2px 3px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title></svg></span><span style="display:inline-block;padding:2px 3px;">Rob Schreckhise</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="assets/gorilla3.jpg" class="card-img-top" alt="Responsive image">
-                    <div class="card-body">
-                        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@porcorosso?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Porco Rosso"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title>
-                        </svg></span><span style="display:inline-block;padding:2px 3px;">Porco Rosso</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
+       </div>
 
-            </div>
-            <div class="col-sm-4">
+       <div class="content-box2">
 
-            </div>
-            <div class="col-sm-4">
+       </div>
 
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-md">
-                <h2>Keasty will be great.</h2>
-                <p>Keasty.com is owned by the nice folks at <a href="http://fourthwavestudios.com">Fourth Wave</a>.</p>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col" align="left">
-                <a-scene>
-                    <a-assets>
-                        <a-asset-item id="tinyhome1" src="tinyhome1.dae"></a-asset-item>
-                    </a-assets>
-                    <a-entity collada-model="#tinyhome1"></a-entity>
-                   
-                    <a-sky color="#c4e6ff"></a-sky>
-                </a-scene>
-            </div>
-        </div>
-    </div>
+       <div class="content-box1">
 
-  </body>
+       </div>
+
+       <div class="content-box2">
+
+       </div>
+
+       <div class="content-box1">
+
+       </div>
+
+       <div class="content-box2">
+
+       </div>
+
+       <div class="content-box2">
+
+       </div>
+
+       <div class="content-box2">
+
+       </div>
+     </ul>
+   </div>
+ </body>
 </html>

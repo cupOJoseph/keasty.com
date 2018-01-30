@@ -1,0 +1,41 @@
+
+
+/* The Fukol CSS 'grid system' */
+.fukol-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5em;
+}
+
+.fukol-grid > * {
+  flex: 1 0 10em;
+  margin: 0.5em;
+}
+
+.content-box{
+
+  min-width: 200px;
+  min-height: 200px;
+  max-height: 500px;
+}
+
+.content-box1{
+  background-color: #81401D;
+  min-width: 200px;
+  min-height: 200px;
+  max-height: 500px;
+}
+
+.content-box2{
+  background-color: #30736A;
+  min-width: 200px;
+  min-height: 200px;
+  max-height: 500px;
+}
+
+.content-box3{
+   background-image: url("http://127.0.0.1/Users/Optimus_Prime/Pictures/sshackital.jpg");
+  min-width: 200px;
+  min-height: 200px;
+  max-height: 500px;
+}
