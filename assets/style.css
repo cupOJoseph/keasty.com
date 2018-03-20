@@ -1,4 +1,10 @@
+body{
+  margin: 20px;
+}
 
+.fukol{
+  margin: auto;
+}
 
 /* The Fukol CSS 'grid system' */
 .fukol-grid {
@@ -13,17 +19,19 @@
 }
 
 .content-box{
-
-  min-width: 200px;
-  min-height: 200px;
-  max-height: 500px;
+  width: 400px;
+  height: 400px;
 }
 
 .content-box1{
-  background-color: #81401D;
-  min-width: 200px;
-  min-height: 200px;
-  max-height: 500px;
+  background-color: #F7941D;
+  width: 400px;
+  height: 400px;
+}
+
+.content-box1 p{
+  color: #f0f0f0;
+  margin-left: 10px;
 }
 
 .content-box2{
