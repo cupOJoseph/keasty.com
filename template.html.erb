@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8">
+
+   <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+   <title>Model Grid</title>
+ </head>
+ <body>
+<style media="screen">
+body{
+  margin: 0px auto;
+  background-color: #30736A;
+}
+</style>
+
+    <a-scene embedded>
+      <a-assets>
+        <a-asset-item id="<%= @model_name %>" src="~/Desktop/models/<%= @model_name %>.dae"></a-asset-item>
+      </a-assets>
+      <a-entity collada-model="#<%= @model_name %>>"></a-entity>
+      <a-sky color="#c4e6ff"></a-sky>
+    </a-scene>
+
+ </body>
+</html>
