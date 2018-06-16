@@ -36,6 +36,7 @@ body{
 
 .content-box2{
   background-color: #30736A;
+  color: #ffffff;
   min-width: 200px;
   min-height: 200px;
   max-height: 500px;
@@ -46,4 +47,16 @@ body{
   min-width: 200px;
   min-height: 200px;
   max-height: 500px;
+}
+
+a{
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+a:hover{
+  text-decoration: none;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ffffff;
 }
