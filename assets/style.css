@@ -40,10 +40,10 @@ body{
   min-width: 200px;
   min-height: 200px;
   max-height: 500px;
+  padding: 5px;
 }
 
 .content-box3{
-   background-image: url("http://127.0.0.1/Users/Optimus_Prime/Pictures/sshackital.jpg");
   min-width: 200px;
   min-height: 200px;
   max-height: 500px;
