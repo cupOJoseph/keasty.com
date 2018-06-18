@@ -5,6 +5,7 @@
    <link rel="stylesheet" href="assets/style.css">
 
    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+   <script src="https://unpkg.com/aframe-physics-system@1.4.0/dist/aframe-physics-system.min.js"></script>
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script type="text/javascript" src="scripts/addFrames.js"></script>
 
@@ -20,9 +21,12 @@
               <a-asset-item id="town" src="./models/town/scene.gltf"></a-asset-item>
             </a-assets>
 
-            <a-entity gltf-model="#town" position="0 1.2 -3" scale="0.2 0.2 0.2"></a-entity>
+            <a-entity gltf-model="#town" position="0 1.2 -3" scale="0.2 0.2 0.2" static-body></a-entity>
             <a-sky color="#9ef2ff"></a-sky>
 
+            <!-- 25 grey balls fall from the sky kinematic-body-->
+
+            <a-sphere position="0 3 -3" radius="1" color="#EF2D5E" dynamic-body></a-sphere>
 
            </a-scene>
          </div>
