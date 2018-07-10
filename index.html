@@ -17,11 +17,15 @@
      <ul class="fukol-grid" id="frames">
          <div class="content-box" >
            <a-scene embedded>
-             <a-assets>
-              <a-asset-item id="town" src="./models/town/scene.gltf"></a-asset-item>
-            </a-assets>
 
-            <a-entity gltf-model="#town" position="0 1.2 -3" scale="0.2 0.2 0.2" static-body></a-entity>
+             <a-scene>
+             <a-assets>
+               <a-asset-item id="tree-obj" src="models/quiver.obj"></a-asset-item>
+             </a-assets>
+
+             <a-entity obj-model="obj: #tree-obj"></a-entity>
+           </a-scene>
+
             <a-sky color="#9ef2ff"></a-sky>
 
             <!-- 25 grey balls fall from the sky kinematic-body-->
